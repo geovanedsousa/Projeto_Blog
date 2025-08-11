@@ -8,7 +8,7 @@
 class Mensagem 
 {
     private $texto;
-    public $css;
+    private $css;
 
     /**
      * Renderizar Mensagem
