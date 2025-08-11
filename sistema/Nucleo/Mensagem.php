@@ -10,6 +10,12 @@ class Mensagem
     private $texto;
     private $css;
 
+    public function sucesso(string $mensagem): Mensagem
+    {
+        $this -> texto = $this -> filtrar($mensagem);
+        return $this;
+    }
+
     /**
      * Renderizar Mensagem
      * @param string $texto
@@ -17,7 +23,7 @@ class Mensagem
      */
     public function renderizar(): string
     {   
-        return $this -> texto = $this -> filtrar('<h1>mensagem de teste');
+        return $this -> texto;
     }
     /**
      * Filtro de mensagem

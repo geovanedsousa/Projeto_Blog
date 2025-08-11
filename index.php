@@ -6,7 +6,7 @@ include_once "helpers.php";
 include "./sistema/Nucleo/Mensagem.php";
 
 $msg = new Mensagem();
-echo $msg -> renderizar();
+echo $msg -> sucesso('Mensagem de sucesso')-> renderizar();
 echo '<hr>';
 var_dump($msg);
 
