@@ -12,6 +12,7 @@ class Mensagem
 
     public function sucesso(string $mensagem): Mensagem
     {
+        $this -> css = 'alert alert-success';
         $this -> texto = $this -> filtrar($mensagem);
         return $this;
     }
@@ -23,7 +24,7 @@ class Mensagem
      */
     public function renderizar(): string
     {   
-        return $this -> texto;
+        return "<div class= '{$this-> css}'>{$this -> texto}</div>";
     }
     /**
      * Filtro de mensagem
