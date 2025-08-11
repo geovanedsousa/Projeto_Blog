@@ -31,6 +31,13 @@ class Mensagem
         return $this;
     }
 
+    public function informa(string $mensagem): Mensagem
+    {
+        $this -> css = 'alert alert-info';
+        $this -> texto = $this -> filtrar($mensagem);
+        return $this;
+    }
+
     /**
      * Renderizar Mensagem
      * @param string $texto

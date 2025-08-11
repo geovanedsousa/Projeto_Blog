@@ -14,7 +14,9 @@ echo $msg -> erro('Mensagem de erro')-> renderizar();
 echo '<hr>';
 echo $msg -> alerta('Mensagem de alerta')-> renderizar();
 echo '<hr>';
-var_dump($msg);
+echo $msg -> informa('Mensagem de informação')-> renderizar();
+echo '<hr>';
+//var_dump($msg);
 
 
 
