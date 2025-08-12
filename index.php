@@ -10,8 +10,8 @@ include "./sistema/Nucleo/Mensagem.php";
 //$msg = new Mensagem();
 //echo $msg -> sucesso('Mensagem de sucesso')-> renderizar();
 
-
-
+echo (new Mensagem())-> erro ('Mensagem de erro')-> renderizar();
+echo '<hr>';
 
 
 ?>
