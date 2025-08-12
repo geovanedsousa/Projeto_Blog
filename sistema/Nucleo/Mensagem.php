@@ -29,6 +29,11 @@ class Mensagem
         return $this;
     }
 
+    /**
+     * Função responsável pela mensagem de Alerta
+     * @param string $mensagem
+     * @return Mensagem
+     */
     public function alerta(string $mensagem): Mensagem
     {
         $this -> css = 'alert alert-warning';
@@ -36,6 +41,11 @@ class Mensagem
         return $this;
     }
 
+    /**
+     * Função responsável pela mensagem de Informação
+     * @param string $mensagem
+     * @return Mensagem
+     */
     public function informa(string $mensagem): Mensagem
     {
         $this -> css = 'alert alert-primary';
