@@ -9,14 +9,7 @@ include "./sistema/Nucleo/Mensagem.php";
 
 $msg = new Mensagem();
 echo $msg -> sucesso('Mensagem de sucesso')-> renderizar();
-echo '<hr>';
-echo $msg -> erro('Mensagem de erro')-> renderizar();
-echo '<hr>';
-echo $msg -> alerta('Mensagem de alerta')-> renderizar();
-echo '<hr>';
-echo $msg -> informa('Mensagem de informação')-> renderizar();
-echo '<hr>';
-//var_dump($msg);
+
 
 
 
