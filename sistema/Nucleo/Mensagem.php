@@ -15,6 +15,11 @@ class Mensagem
         return $this-> renderizar();
     }
 
+    /**
+     * Função responsável pela mensagem de Sucesso
+     * @param string $mensagem
+     * @return Mensagem
+     */
     public function sucesso(string $mensagem): Mensagem
     {
         $this -> css = 'alert alert-success';
@@ -22,6 +27,11 @@ class Mensagem
         return $this;
     }
 
+    /**
+     * Função responsável pela mensagem de Erro
+     * @param string $mensagem
+     * @return Mensagem
+     */
     public function erro(string $mensagem): Mensagem
     {
         $this -> css = 'alert alert-danger';
