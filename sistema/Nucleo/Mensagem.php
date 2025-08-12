@@ -16,6 +16,7 @@ class Mensagem
      */
     public function __toString()
     {
+        //método usado para simplificar a renderização da classe Mensagem
         return $this-> renderizar();
     }
 
