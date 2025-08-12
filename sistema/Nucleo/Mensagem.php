@@ -10,6 +10,10 @@ class Mensagem
     private $texto;
     private $css;
 
+    /**
+     * Método mágico 
+     * @param __toString
+     */
     public function __toString()
     {
         return $this-> renderizar();
@@ -22,6 +26,7 @@ class Mensagem
      */
     public function sucesso(string $mensagem): Mensagem
     {
+        //$this pseudo variavel vai acessar texto q vai receber outro $this para acessar filtrar
         $this -> css = 'alert alert-success';
         $this -> texto = $this -> filtrar($mensagem);
         return $this;
