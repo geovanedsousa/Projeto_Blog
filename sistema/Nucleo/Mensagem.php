@@ -27,8 +27,9 @@ class Mensagem
      */
     public function sucesso(string $mensagem): Mensagem
     {
-        //$this pseudo variavel vai acessar texto q vai receber outro $this para acessar filtrar
+        //$this vai acessar css e receber o texto e comando do 
         $this -> css = 'alert alert-success';
+        //$this pseudo variavel vai acessar texto q vai receber outro $this para acessar filtrar
         $this -> texto = $this -> filtrar($mensagem);
         return $this;
     }
