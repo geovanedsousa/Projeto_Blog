@@ -27,7 +27,7 @@ class Mensagem
      */
     public function sucesso(string $mensagem): Mensagem
     {
-        //$this vai acessar css e receber o texto e comando do 
+        //$this vai acessar css e receber o texto e o estilo do texto
         $this -> css = 'alert alert-success';
         //$this pseudo variavel vai acessar texto q vai receber outro $this para acessar filtrar
         $this -> texto = $this -> filtrar($mensagem);
@@ -77,6 +77,7 @@ class Mensagem
      */
     public function renderizar(): string
     {   
+        //
         return "<div class= '{$this-> css}'>{$this -> texto}</div>";
     }
     /**
