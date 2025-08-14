@@ -77,7 +77,7 @@ class Mensagem
      */
     public function renderizar(): string
     {   
-        //
+        //retora na função os estilos com o texto
         return "<div class= '{$this-> css}'>{$this -> texto}</div>";
     }
     /**
