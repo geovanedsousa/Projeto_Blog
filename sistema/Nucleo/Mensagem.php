@@ -7,7 +7,7 @@ namespace sistema\Nucelo;
  * @author Geovane Sousa <geovanedesousa203@gmail.com>
  * @copyright Copyright (c) 2025, Geovane
  */
-class Mensagem 
+class Mensagem
 {
     private $texto;
     private $css;

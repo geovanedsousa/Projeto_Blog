@@ -1,4 +1,7 @@
-<?php
+<?php 
+
+class Helpers
+{
 
 
 /**
@@ -273,4 +276,7 @@ function resumirTexto(string $texto, int $limite, string $continue = "...") : st
 
     return $resumirTexto.$continue;
 }
+
+}
+
 ?>
