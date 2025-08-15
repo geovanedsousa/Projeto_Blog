@@ -4,14 +4,14 @@
 require_once "sistema/configuracao.php";
 include_once "./sistema/Nucleo/Helpers.php";
 include "./sistema/Nucleo/Mensagem.php";
+include "./sistema/Nucleo/Controlador.php";
 
-use sistema\Nucelo\Helpers;
-//use sistema\Nucelo\Mensagem;
-//echo (new Mensagem)-> alerta('Mensagem de Alerta');
+use sistema\Nucelo\Controlador;
 
-echo Helpers:: saudacao();
-echo '<hr>'; 
-echo Helpers::dataAtual();
+$controlador= new Controlador('admin');
+echo '<hr>';
+var_dump($controlador);
+
 echo '<hr>';
 
 
