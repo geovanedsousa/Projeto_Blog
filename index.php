@@ -5,7 +5,7 @@ require_once "sistema/configuracao.php";
 include_once "./sistema/Nucleo/helpers.php";
 include "./sistema/Nucleo/Mensagem.php";
 
-
+use sistema\Nucelo\Helpers;
 //use sistema\Nucelo\Mensagem;
 //echo (new Mensagem)-> alerta('Mensagem de Alerta');
 

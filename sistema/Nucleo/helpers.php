@@ -1,5 +1,7 @@
 <?php 
 
+namespace sistema\Nucelo;
+
 class Helpers
 {
 
