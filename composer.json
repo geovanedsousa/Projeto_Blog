@@ -1,17 +1,22 @@
 {
-    "name": "https://github.com/geovanedsousa",
+    "name": "github.com/geovanedsousa",
     "description": "Meu Blog",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Beta\\Blog\\": "src/"
+            "sistema\\": "sistema/"
         }
     },
     "authors": [
         {
-            "name": "Geovane"
+            "name": "Geovane",
+            "email": "geovanedesousa203@gmail.com",
+            "homepage": "https://www.naderman.de",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=8.0"
+    }
 }
