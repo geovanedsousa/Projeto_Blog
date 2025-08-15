@@ -45,7 +45,7 @@ public static function limparNumero(string $numero): string
  * @param string $titulo 
  * @return string
  */
-function slug(string $titulo): string
+public static function slug(string $titulo): string
 { 
     // ARRAYS que vai guardar caracteres especiais 
     $mapa['a'] = "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÕÕÖØÙÚÛÜÜÝÞBÀ àáâãäåæçèéêëìíîïðñòóõõöøùúûüüýþbà @#$%&*()_-+={[}]/?!'¨|;:.,\\\<>°ºª  ";
@@ -67,7 +67,7 @@ function slug(string $titulo): string
  * @param string vai receber as datas
  * @return string retorna dinamicamente as datas fomatas
  */
-function dataAtual() : string
+public static function dataAtual() : string
 {
     $diaMes = date('d');
     $diaSemana = date('w');
@@ -89,7 +89,7 @@ function dataAtual() : string
  * @param string $url parte da url ex. admin
  * @return string url compelta
  */
-function url(string $url) : string
+public static function url(string $url) : string
 {
     $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
     $ambiente = $servidor == 'localhost' ? URL_DESENVOLVIMENTO : URL_PRODUCAO;
@@ -102,7 +102,7 @@ function url(string $url) : string
  * @param string 
  * @return bool vai retornar se o nome do servidor é 'localhost' 
  */
-function localhost() : bool
+public static function localhost() : bool
 {
     $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
 
@@ -117,7 +117,7 @@ function localhost() : bool
  * @param string $url 
  * @return bool retorna se a url é true ou false
  */
-function validarUrl(string $url) : bool
+public static function validarUrl(string $url) : bool
 {
     if (mb_strlen($url < 10)){
         return false;
@@ -131,7 +131,7 @@ function validarUrl(string $url) : bool
 
     return false;
 }
-function validarUrlComFiltro(string $url) : bool
+public static function validarUrlComFiltro(string $url) : bool
 {
     return filter_var($url, FILTER_VALIDATE_URL);
 }
@@ -142,7 +142,7 @@ function validarUrlComFiltro(string $url) : bool
  * @param string $email
  * @return bool retorna se a email é true ou false
  */
-function validarEmail(string $email) : bool
+public static function validarEmail(string $email) : bool
 {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
@@ -152,7 +152,7 @@ function validarEmail(string $email) : bool
  * @param string @data opcional-recebe uma data qualquer
  * @return string  retorna o tempo decorrido dessa data 
  */
-function contarTempo(string $data) : string
+public static function contarTempo(string $data) : string
 {
     $agora = strtotime(date('Y-m-d H:i:s'));
     $tempo = strtotime($data);
@@ -196,7 +196,7 @@ function contarTempo(string $data) : string
  * @param float $valor vai receber um valor null
  * @return string vai retornar um valor formatado
  */
-function formatarValor(float $valor = null) : string
+public static function formatarValor(float $valor = null) : string
 {
     return number_format(($valor ? $valor : 1), 2, ',','.');
 }
@@ -206,7 +206,7 @@ function formatarValor(float $valor = null) : string
  * @param int $numero
  * @return string 
  */
-function formatarNumero(int $numero = null) : string
+public static function formatarNumero(int $numero = null) : string
 {
     return number_format(($numero ? $numero : 1), 0, '.','.');
 }
@@ -215,7 +215,7 @@ function formatarNumero(int $numero = null) : string
  * @return string $saudação 
  * @return string 
  */
-function saudacao() : string
+public static function saudacao() : string
 {
     $hora = date('H');
 
@@ -263,7 +263,7 @@ function saudacao() : string
  * @param int $limite o limite de caracteres do texto 
  * @param string $continue opcional - o que vai ser exibido no final do texto 
  */
-function resumirTexto(string $texto, int $limite, string $continue = "...") : string
+public static function resumirTexto(string $texto, int $limite, string $continue = "...") : string
 {
     
     $textoLimpo = trim(strip_tags($texto));
