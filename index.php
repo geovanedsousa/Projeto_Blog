@@ -11,7 +11,9 @@ include "./sistema/Nucleo/Mensagem.php";
 //echo $msg -> sucesso('Mensagem de sucesso')-> renderizar();
 //echo (new Mensagem())-> erro ('Mensagem de erro')-> renderizar();
 
-echo (new Mensagem())-> alerta('Mensagem de Alerta');
+use sistema\Nucelo\Mensagem;
+
+echo (new Mensagem)-> alerta('Mensagem de Alerta');
 echo '<hr>';
 
 
