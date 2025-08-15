@@ -2,6 +2,11 @@
 
 namespace sistema\Nucelo;
 
+/**
+ * Classe Helpers- responsável pelas funções do sistema
+ * @author Geovane Sousa <geovanedesousa203@gmail.com>
+ * @copyright Copyright (c) 2025, Geovane
+ */
 class Helpers
 {
 

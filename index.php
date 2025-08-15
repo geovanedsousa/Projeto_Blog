@@ -2,7 +2,7 @@
 //Arquivo index repomsável pela inicialização do sistema
 
 require_once "sistema/configuracao.php";
-include_once "./sistema/Nucleo/helpers.php";
+include_once "./sistema/Nucleo/Helpers.php";
 include "./sistema/Nucleo/Mensagem.php";
 
 use sistema\Nucelo\Helpers;
