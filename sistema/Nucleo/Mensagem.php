@@ -1,5 +1,7 @@
 <?php 
 
+namespace sistema\Nucelo;
+
 /**
  * Classe Mensagem- responsável por exibir as mensagens do sistema
  * @author Geovane Sousa <geovanedesousa203@gmail.com>
