@@ -1,0 +1,17 @@
+{
+    "name": "beta/blog",
+    "description": "Meu Blog",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Beta\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Geovane"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
