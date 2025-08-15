@@ -3,16 +3,15 @@
 class Helpers
 {
 
-
 /**
  * Validador de CPF
  * @param string $cpf vai receber um valor qualquer
  * @return bool vai retorna se o $cpf é valido ou não 
  */
-function validarCfp(string $cpf): bool
+public static function validarCfp(string $cpf): bool
 {   
     //chama a função limparNumero para tirar os caracteres regulares
-    $cpf = limparNumero($cpf);
+    $cpf = self::limparNumero($cpf);
     //uma forma simples de validar um CPF
     if (mb_strlen($cpf) != 11 or preg_match('/(\d)\1{10}/',$cpf)){
         return false;
@@ -35,7 +34,7 @@ function validarCfp(string $cpf): bool
  * @param string $numero só recebe numeros com 9 digitos
  * @return string retorna o numero sem caracates 
  */
-function limparNumero(string $numero): string
+public static function limparNumero(string $numero): string
 {   
     //vai procurar os caracteres regulares no $numero e trocalos por nada
     return preg_replace('/[^0-9]/', '', $numero);
