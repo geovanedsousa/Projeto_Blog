@@ -11,20 +11,12 @@ class ComposerStaticInit726ed63716be0e97bb281fe070fc75f0
         array (
             'sistema\\' => 8,
         ),
-        'B' => 
-        array (
-            'Bissolli\\ValidadorCpfCnpj\\' => 26,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'sistema\\' => 
         array (
             0 => __DIR__ . '/../..' . '/sistema',
-        ),
-        'Bissolli\\ValidadorCpfCnpj\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/bissolli/validador-cpf-cnpj/src',
         ),
     );
 
