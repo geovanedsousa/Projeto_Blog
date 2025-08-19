@@ -1,6 +1,6 @@
 <?php 
 
-namespace sistema\Nucelo;
+namespace sistema\Nucleo;
 
 /**
  * Classe Helpers- responsável pelas funções do sistema
