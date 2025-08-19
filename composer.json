@@ -5,7 +5,10 @@
     "autoload": {
         "psr-4": {
             "sistema\\": "sistema/"
-        }
+        },
+        "files":[
+            "sistema/configuracao.php"
+        ]
     },
     "authors": [
         {

@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 //Arquivo de configuração do sistema
 
 //definir o fuso horario
