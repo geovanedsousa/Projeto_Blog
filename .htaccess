@@ -1,0 +1,6 @@
+Options -indexes
+
+RewriteEngine On 
+
+RewriteBase /blog
+
