@@ -8,6 +8,10 @@ class SiteControl
    {
     echo 'página index';
    }
+   public function sobre(): void
+   {
+    echo 'página sobre';
+   }
 }
 
 ?>
