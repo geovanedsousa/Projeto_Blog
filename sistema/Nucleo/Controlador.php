@@ -2,11 +2,15 @@
 
 namespace sistema\Nucelo;
 
+use sistema\Suporte\Twig;
+
 class Controlador
 {
-    public function __construct(string $tema= null)
+    protected Twig $twig; 
+
+    public function __construct(string $diretorio)
     {
-        echo $tema;
+        $this->twig= new Twig($diretorio);
     }
 }
 

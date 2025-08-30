@@ -2,8 +2,16 @@
 
 namespace sistema\Control;
 
-class SiteControl
+use sistema\Nucelo\Controlador;
+
+class SiteControl extends Controlador
 {
+
+   public function __construct(string $diretorio)
+   {
+      parent::__construct('');
+   }
+
    public function index(): void
    {
     echo 'página index';
