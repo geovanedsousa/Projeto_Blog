@@ -9,7 +9,7 @@ class SiteControl extends Controlador
 
    public function __construct(string $diretorio)
    {
-      parent::__construct('');
+      parent::__construct('templates/site/views');
    }
 
    public function index(): void
